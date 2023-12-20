@@ -1,6 +1,7 @@
 import react from "react";
 import styled from 'styled-components';
 import STRINGS from "../strings";
+import profile from '../assets/images/profile.png';
 
 const Page = styled.div`
     display: flex;
@@ -10,11 +11,16 @@ const Page = styled.div`
 
 const Profile = styled.h2`
     display: flex;
+    align-items: center;
     flex-direction: row;
-    flex-flow: space-around;
-    padding: 3rem;
+    justify-content: space-between;
+    padding: 6rem;
     font-size: 1.2rem;
 `;
+
+const Profile_Description = styled.h2`
+    padding: 1.2rem;
+`
 
 const Intro = styled.p`
     display: flex;
@@ -28,8 +34,8 @@ const About = () => {
      return(
         <Page>
             <Profile>
-                <image>Image</image>
-                <h2>{STRINGS.about_profile}</h2>
+                <img src={profile} alt="profile image" width='30%'/>
+                <Profile_Description>{STRINGS.about_profile}</Profile_Description>
             </Profile>
             <Intro>{STRINGS.about_intro}</Intro>
         </Page>
