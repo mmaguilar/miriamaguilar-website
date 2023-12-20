@@ -12,7 +12,10 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' Component={About}/>
-        <Route path='/projects' Component={Projects}/>
+        <Route path='/projects' Component={() => {
+          window.location.href = 'https://github.com/mmaguilar';
+          return null;
+        }}/>
         <Route path='/resume' Component={Resume}/>
         <Route path='/contact' Component={Contact}/>
       </Routes>
