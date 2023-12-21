@@ -1,9 +1,9 @@
 import react from "react";
 
 const Projects = () => {
-    return(<div>
-        Projects page
-    </div>)
+    return(
+        <div></div>
+    )
 }
 
 export default Projects;
